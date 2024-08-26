@@ -1,0 +1,95 @@
+
+.Cuerpo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #b483d8;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: clip-path 0.5s ease;
+    margin-top: 30px;
+  }
+
+  
+  
+  .Container {
+    margin: 40px;
+  
+  }
+  
+  .Card {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgb(0, 0, 0);
+    backdrop-filter: blur(15px);
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    padding: 15px;
+    height: 700px;
+  }
+  
+  .Card:hover {
+    transform: translateY(-10px);
+  }
+  
+
+
+  .ImgBx img {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  
+  .ContentBx h3 {
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .ContentBx p {
+    justify-content: center;
+    color: #e3e3e3;
+    margin: 30px 0 20px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .ContentBx span {
+    color: white;
+    font-style: italic;
+    font-size: 16px;
+  }
+  
+  .sci {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .sci li {
+    margin: 0 10px;
+    transition: transform 0.3s;
+  }
+  
+  .sci li:hover {
+    transform: scale(1.2);
+  }
+  
+  .sci li a {
+    color: #fff;
+    font-size: 20px;
+  }
+
+ 
+  

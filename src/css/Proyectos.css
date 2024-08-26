@@ -1,0 +1,129 @@
+.proyectos{
+  display: flex;
+  gap: 20px;
+}
+
+.containerInfo {
+
+  width: 30vw;
+  margin: 50px auto;
+  background-color: #9b86bd;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  .h11 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+  }
+  
+  .info {
+    margin-top: 20px;
+  }
+  
+  .info p {
+    font-size: 18px;
+    color: white;
+    margin: 10px 0;
+  }
+  
+  .info p strong {
+    color: #333;
+  }
+}
+
+
+
+
+.containerrr {
+  display: flex;
+  gap: 20px;
+}
+
+.inner {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: #9b86bd;
+  padding: 1em;
+  border-radius: 10px;
+  width: 30%;
+  clip-path: circle(6% at 50% 8%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    clip-path: circle(75%);
+    background: #5a639c;
+    .h11 {
+      color: rgba(255, 255, 255, 0);
+      transition: color 0.5s;
+      i {
+        color: rgba(255, 255, 255, 0);
+        transition: color 0.5s;
+      }
+    }
+  }
+
+  .h11 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 70px;
+
+    i {
+      margin-top: 0.5px;
+      color: #ffffff;
+    }
+  }
+
+  h2 {
+    color: white;
+    margin: 0;
+  }
+
+  .inner p {
+    color: white;
+    font-size: 0.8rem;
+  }
+}
+
+.titulo {
+  margin-top: 20px;
+  font-size: 90px;
+  color: #5a639c;
+  text-align: center;
+  font-weight: 700;
+}
+
+.imagenPro {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (width < 750px) {
+  .inner {
+    clip-path: circle(3% at 50% 3.5%);
+  }
+  .titulo {
+    font-size: 60px;
+    font-weight: 700;
+  }
+}
+
+@media (width < 400px) {
+  .inner {
+    clip-path: circle(3% at 50% 2.5%);
+  }
+  .titulo {
+    font-size: 60px;
+    font-weight: 700;
+  }
+}

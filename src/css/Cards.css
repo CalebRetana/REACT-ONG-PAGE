@@ -1,0 +1,169 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 150px;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  margin: 10px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  background-color: rgba(0, 0, 0, 4);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.card .back p,
+li {
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-style: bold;
+  text-align: justify;
+  margin: 15px;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.mision {
+  background: linear-gradient(rgba(90, 99, 156, 0.7), rgba(90, 99, 156, 0.7)), url(../imagenes/mision.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.vision {
+  background: linear-gradient(rgba(90, 99, 156, 0.7), rgba(90, 99, 156, 0.7)), url(../imagenes/vision.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.valor {
+  background: linear-gradient(rgba(90, 99, 156, 0.7), rgba(90, 99, 156, 0.7)), url(../imagenes/valor.png) no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 1544px) {
+  .card-container {
+    margin: 100px;
+    gap: 15px;
+  }
+
+  .card {
+    width: 400px;
+    height: 450px;
+  }
+
+  .card .back h3 {
+    font-size: 25px;
+  }
+
+  .card .back p,
+  .card .back li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-container {
+    margin: 100px;
+    gap: 15px;
+  }
+
+  .card {
+    width: 400px;
+    height: 400px;
+  }
+
+  .card .back h3 {
+    font-size: 25px;
+  }
+
+  .card .back p,
+  .card .back li {
+    font-size: 16px;
+  }
+}
+
+/* Media Queries para Móviles */
+@media (max-width: 768px) {
+  .card-container {
+    margin: 50px;
+    gap: 10px;
+  }
+
+  .card {
+    width: 300px;
+    height: 350px;
+  }
+
+  .card .back h3 {
+    font-size: 20px;
+  }
+
+  .card .back p,
+  .card .back li {
+    font-size: 14px;
+  }
+
+  .card .back .valor p {
+    font-size: 10px;
+  }
+
+  .card .front h3 {
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+  }
+}
